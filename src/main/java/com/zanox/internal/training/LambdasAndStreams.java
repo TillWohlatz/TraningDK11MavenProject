@@ -6,6 +6,8 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
+import static java.util.stream.Collectors.joining;
+
 
 /**
  * Training resources for lambdas, streams and method references
@@ -33,9 +35,10 @@ public class LambdasAndStreams {
         DummyInterface handler = (x)->{
             var result=x
                     .chars()
-                    .mapToObj(i -> (char) i)
-                    .map(c -> Character.toString(c))
-                    .reduce("", (s, c) -> s + c + c);
+                    .mapToObj(c -> Character.valueOf((char)c))
+                    .map(String::valueOf)
+                    //.collect(joining(""));
+                    .reduce("Test: ", (s, c) -> s + c + c);
             return result;
         };
         dummyFunction("Fubar", handler);
