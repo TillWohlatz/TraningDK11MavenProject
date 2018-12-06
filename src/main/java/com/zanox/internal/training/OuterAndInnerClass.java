@@ -28,8 +28,10 @@ public class OuterAndInnerClass {
     private void otherRestricedMethod(){
         System.out.println("Accessed other private method!");
     }
+
     /**
      * Nested class to show creation from static out method
+     * - 'show creation from static out method' verstehe ich nicht
      * and as well to access a private static field of the outer class.
      */
     class NestedClassA{
@@ -44,7 +46,7 @@ public class OuterAndInnerClass {
     }
 
     /**
-     * Nested static class to simulate reflection access of private static method of the holding class
+     * Nested static class to demonstrate / showcase reflection access of private static method of the holding class
      */
     public static class ReflectiveAccess{
 
