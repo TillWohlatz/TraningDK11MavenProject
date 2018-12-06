@@ -30,8 +30,7 @@ public class OuterAndInnerClass {
     }
 
     /**
-     * Nested class to show creation from static out method
-     * - 'show creation from static out method' verstehe ich nicht
+     * Nested class to show creation from static method in outer class
      * and as well to access a private static field of the outer class.
      */
     class NestedClassA{

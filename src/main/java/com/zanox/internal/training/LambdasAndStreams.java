@@ -60,7 +60,6 @@ public class LambdasAndStreams {
 
     /**
      * Custom functional interface
-     * - doc ist für mich verständlicher wenn interface mit dokumentiert ist. Geht das auch irgendwie für private member?
      */
     @FunctionalInterface
     public interface DummyInterface {
