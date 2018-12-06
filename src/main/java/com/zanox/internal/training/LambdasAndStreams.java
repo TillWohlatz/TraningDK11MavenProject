@@ -16,7 +16,7 @@ public class LambdasAndStreams {
 
 
     /**
-     * Dummy main for run within IDE
+     * Main method to execute this example
      * @param args runtime args for the execution (leave empty, necessary standard of the main signature)
      */
     public static void main(String[] args) {
@@ -62,7 +62,7 @@ public class LambdasAndStreams {
      * Custom functional interface
      */
     @FunctionalInterface
-    interface DummyInterface {
+    public interface DummyInterface {
         public String handleTheDummy(String input);
     }
     
